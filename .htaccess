@@ -1,0 +1,30 @@
+# For instructions and new versions of this Gist go to:
+# https://gist.github.com/julianpoemp/bcf277cb56d2420cc53ec630a04a3566
+# Version 1.4.1
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^tunisieshop\.tn [NC]
+  RewriteCond %{SERVER_PORT} 443
+  RewriteRule ^(.*)$ http://tunisieshop.tn/$1 [R,L]
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . index.html [L]
+</IfModule>
+
+#------------ BROWSER CACHING (optional)
+# Disable browser caching for all files that don't get a hash string by Angular.
+#<FilesMatch "^(?!.*\.([0-9a-z]{20})\.).*$">
+#  <IfModule mod_headers.c>
+#    FileETag None
+#    Header unset ETag
+#    Header unset Pragma
+#    Header unset Cache-Control
+#    Header unset Last-Modified
+#    Header set Pragma "no-cache"
+#    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+#    Header set Expires "Mon, 10 Apr 1972 00:00:00 GMT"
+#  </IfModule>
+#</FilesMatch>
+#--

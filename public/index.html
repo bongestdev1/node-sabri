@@ -1,0 +1,251 @@
+  <!doctype html>
+<html lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <title>Bon-ERP</title>
+  <base href="/">
+
+  <!--IE11-->
+  <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 11]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="">
+  <meta name="author" content="Amit Gorasiya" />
+
+  <style>
+
+
+
+    .table-responsive{
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .button-edit-delete{
+      margin-right: 5px;
+      height: 30px !important;
+      width: 30px !important;
+    }
+
+    .class-titre-button{
+      justify-content: space-between !important;
+      margin:0px !important;
+    }
+    .form-group{
+      margin-bottom: 3px !important;
+    }
+
+    .desactive-text-span {
+      top: 0px;
+      left: 0px;
+      margin-left: 0px;
+      margin-right: 15px;
+      width: 100% !important;
+      border: 2px solid rgb(218, 216, 216) !important;
+      padding:1px !important;
+    }
+
+    .desactive-text-span-relative{
+      padding:1px !important;
+      height: 29px !important;
+    }
+
+    .desactive-text .desactive-text-span {
+      display: none;
+    }
+
+    .collapse-input {
+      padding: 0px;
+      height: 29px;
+    }
+
+    .desactive-text-input {
+      width: calc(100% - 30px) !important;
+      border: 2px solid rgb(218, 216, 216) !important;
+      padding:1px !important;
+    }
+
+    .desactive-span{
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 29px !important;
+    padding-top: 1px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 30px) !important;
+    border: 2px solid rgb(218, 216, 216) !important;
+
+    padding:1px !important;
+
+}
+.desactive-text .desactive-span{
+    display: none;
+}
+.txtSpan
+{
+  margin-top: -8px;
+}
+/*///////////////*/
+input[type="number"]{
+  height: 29px !important;
+  padding: 5px !important;
+  padding-left:1px !important;
+}
+
+input[type="text"]{
+  height: 29px !important;
+  padding: 5px !important;
+  padding-left:1px !important;
+}
+
+input[type="input"]{
+  height: 29px !important;
+  padding: 5px !important;
+  padding-left:1px !important;
+}
+
+input[type="date"]{
+  height: 29px !important;
+  padding: 5px !important;
+  padding-left:1px !important;
+}
+
+input[type="password"]{
+  height: 29px !important;
+  padding: 5px !important;
+  padding-left:1px !important;
+}
+
+input[type="email"]{
+  height: 29px !important;
+  padding: 5px !important;
+  padding-left:1px !important;
+}
+
+select{
+  height: 29px !important;
+  padding: 3px !important;
+}
+
+.desactive-text-span{
+  height: 29px !important;
+}
+
+.desactive-text-input{
+   width: 100% !important;
+   padding:1px !important;
+}
+
+
+label{
+    padding:5px !important;
+    max-width: 100% !important;
+    font-size: 12px !important;
+    padding-left:15px !important;
+}
+
+.erreur{
+  padding-top:0px !important;
+  padding-bottom:5px !important;
+}
+
+.border-erreur{
+  border: solid 1px red !important;
+}
+
+td, th{
+    min-width: 60px !important;
+    padding: 5px !important;
+    font-size: 12px !important;
+    border: 1px solid rgb(207, 207, 207);
+    border-collapse: collapse;
+}
+
+
+.min-Width{
+    min-width: 500px;
+}
+
+@media screen and (max-width: 500px) {
+    .min-Width{
+        min-width: auto;
+    }
+}
+
+.btn-speciale{
+  font-size: 12px !important;
+  padding:3px !important;
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: 3px;
+  height: 30px;
+}
+
+/*///////////////*/
+  </style>
+
+  <link rel="stylesheet" href="./scss/style.scss" type="text/scss" media="screen" />
+
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/1120cd7ee9.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.397330610493d2905200.css"></head>
+
+<body>
+  <app-root></app-root>
+
+  <script>
+/*
+    window.addEventListener('click', function (e) {
+
+      setTimeout( () => {
+
+        var elements = document.getElementsByClassName('autocomplete')
+        var elementsItems = document.getElementsByClassName('autocomplete-items')
+
+        for (let i = 0; i < elements.length; i++) {
+          if (!elements[i].contains(e.target)) {
+            elementsItems[i].setAttribute("class", "autocomplete-items")
+          }
+        }
+
+        var elementsInputs = document.getElementsByClassName("desactive-text");
+        for (let i = 0; i < elementsInputs.length; i++) {
+          if (!elementsInputs[i].contains(e.target)) {
+            elementsInputs[i].classList.remove("desactive-text")
+          }
+        }
+
+        var classStyles = document.getElementsByClassName('enable-list-showelements');
+
+        for(let i = 0; i < classStyles.length; i++){
+          var classStyle =  classStyles[i].getAttribute("class")
+          var parent = classStyles[i].parentElement
+          if (!parent.contains(e.target)){
+            classStyles[i].setAttribute("class", classStyle.replace(" enable-list-showelements",""))
+          }
+        }
+
+      },20)
+
+    });
+*/
+  </script>
+<script src="runtime-es2015.ab754697eede24c43a0a.js" type="module"></script><script src="runtime-es5.ab754697eede24c43a0a.js" nomodule defer></script><script src="polyfills-es5.7c6effe6be343e8155dc.js" nomodule defer></script><script src="polyfills-es2015.37c0abe1398f12d17953.js" type="module"></script><script src="scripts.67b87b45f97c6c9cd474.js" defer></script><script src="main-es2015.04110704163e9e45ca10.js" type="module"></script><script src="main-es5.04110704163e9e45ca10.js" nomodule defer></script></body>
+
+</html>

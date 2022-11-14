@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"f963c4fb68b24e83aaa6e80169060975","collectionName":"etatglobals","type":"collection"}
